@@ -51,4 +51,5 @@ class WikipediaFactsParser:
         if self.current_index < len(self.facts):
             return self.facts[self.current_index]
         else:
+            self.current_index = -1
             return "Больше фактов нет."
